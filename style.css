@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9d9d7; /* پس‌زمینه آب پاستلی */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff6f61; /* رنگ متن */
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#yes-btn {
+    background-color: #ff6f61; /* رنگ دکمه Yes */
+    color: white;
+}
+
+#no-btn {
+    background-color: #a8a8a8; /* رنگ دکمه No */
+    color: white;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+/* افکت قلب‌های شناور */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    animation: float 3s infinite ease-in-out;
+}
